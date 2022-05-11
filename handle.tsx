@@ -49,8 +49,11 @@ export const Handle = () => {
     setState((state): State => ({ ...state, popupOpen: true }));
   }, []);
 
+  /**mode選択 */
+
   return {
     onSwitchTab,
-    onSwitchYearTab
+    onSwitchYearTab,
+    handlePopup
   } as const;
 };
